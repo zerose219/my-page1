@@ -119,6 +119,9 @@ body {
     font-weight: bold;
   }
   
+  
+
+
 
   /* 2. profile style css */
   .about-section {
@@ -250,5 +253,31 @@ body {
   
   .skill-item img:hover {
     transform: scale(1.1);
+  }
+  
+
+
+
+
+  @media (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      height: auto; /* 높이 제한 제거 */
+    }
+  
+    .profile-section {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .bottom-left,
+    .bottom-right {
+      position: static; /* 위치 고정 해제 */
+      margin: 10px 0;
+      text-align: center;
+    }
   }
   
