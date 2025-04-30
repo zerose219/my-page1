@@ -288,5 +288,9 @@ body {
         flex-direction: column;
         align-items: center;
       }
+
+    .project-card-container {
+    margin-top: 20px; /* 🔥 제목과 카드 사이 여백 추가 */
+    }
   }
   
