@@ -184,21 +184,20 @@ body {
     overflow-x: hidden;  /* 👈 가로 스크롤 방지 */
     box-sizing: border-box;
   }
-  
+
   .projects-section h2 {
     font-size: 2em;
     margin-bottom: 30px;
   }
   
-  .project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-  
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
 
   .project-card-container {
     text-align: center;
