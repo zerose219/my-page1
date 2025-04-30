@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 메뉴 -->
+  <div class="dropdown-menu">
+    <button class="menu-button" onclick="toggleMenu()">Menu</button>
+    <div id="menuContent" class="menu-content">
+      <a href="main.html">Main</a>
+      <a href="profile.html">Profile</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+    </div>
+  </div>
+
+  <!-- 프로필 섹션 -->
+  <section class="about-section">
+    <!-- 왼쪽: About Me -->
+    <div class="about-left">
+      <h2>About Me</h2>
+      <p>
+        I have been attending Jeonju University since 2023.<br>
+        My major is computer science. <br>
+        I am mainly studying web and app development.<br>
+        My hobbies are playing games and listening to music.<br>
+        Thank you for coming to my webpage!
+      </p>
+    </div>
+
+    <!-- 오른쪽: Personal Info + Experience -->
+    <div class="about-right">
+      <div class="personal-info">
+        <h3>Personal Info</h3>
+        <p><strong>Born:</strong> 2001 Feb</p>
+        <p><strong>Started study: </strong> 2023</p>
+        <p><strong>Email : </strong>zerose219@gmail.com</p>
+        <p><strong>Github :</strong>
+            <a href="https://github.com/zerose219" target="_blank" class="link">zerose219 (Seyeong)</a></p>
+      </div>
+      <br><br>
+
+      <div class="projects"> 
+        <h3>Projects</h3>
+        <p><strong>2025 - present:</strong> Developing my personal webpage</p>
+        <p><strong>2025 - present:</strong> Developing the "Dream App"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 메뉴 토글 스크립트 -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    window.onclick = function (e) {
+      const menu = document.getElementById("menuContent");
+      if (!e.target.matches(".menu-button")) {
+        menu.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 공통 메뉴 -->
+  <div class="dropdown-menu">
+    <button class="menu-button" onclick="toggleMenu()">Menu</button>
+    <div id="menuContent" class="menu-content">
+      <a href="main.html">Main</a>
+      <a href="profile.html">Profile</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+    </div>
+  </div>
+
+  <!-- 프로젝트 섹션 -->
+  <section class="projects-section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        <!-- 첫 번째 카드: 이미지와 겹치게 배치되는 제목 -->
+        <div class="project-card-container">
+            <span class="project-title-overlay">My webpage</span>
+            <div class="project-card">
+            <img src="web_img.png" alt="Project 1" />
+            </div>
+        </div>
+
+
+
+
+        <div class="project-card-container">
+            <span class="project-title-overlay">Dream App</span>
+            <div class="project-card">
+            <img src="web_img.png" alt="Project 2" />
+            </div>
+        </div>
+
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    window.onclick = function (e) {
+      const menu = document.getElementById("menuContent");
+      if (!e.target.matches(".menu-button")) {
+        menu.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

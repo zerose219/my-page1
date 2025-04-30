@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 메뉴 버튼 -->
+  <div class="dropdown-menu">
+    <button class="menu-button" onclick="toggleMenu()">Menu</button>
+    <div id="menuContent" class="menu-content">
+      <a href="main.html">Main</a>
+      <a href="profile.html">Profile</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+    </div>
+  </div>
+
+  <!-- 첫 페이지 내용 -->
+  <div class="container">
+    <div class="profile-section">
+      <img src="me.jpg" alt="Profile Picture" class="profile-img" />
+      <h1 class="name">Park Seyeong</h1>
+      <p class="title">전주대학교 컴퓨터공학과 재학</p>
+    </div>
+
+    <div class="bottom-left">
+      <h2>Portfolio <span class="year">2025</span></h2>
+    </div>
+
+    <div class="bottom-right">
+      <a href="https://www.saeidrnb.com" target="_blank" class="link">www.zerose219.com</a><br />
+      <p>zerose219@gmail.com</p>
+      <p>Github&nbsp;
+        <a href="https://github.com/zerose219" target="_blank" class="link">zerose219 (Seyeong)</a></p>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    window.onclick = function (e) {
+      const menu = document.getElementById("menuContent");
+      if (!e.target.matches(".menu-button")) {
+        menu.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 공통 메뉴 -->
+  <div class="dropdown-menu">
+    <button class="menu-button" onclick="toggleMenu()">Menu</button>
+    <div id="menuContent" class="menu-content">
+      <a href="main.html">Main</a>
+      <a href="profile.html">Profile</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+    </div>
+  </div>
+
+  <!-- Skills 섹션 -->
+  <section class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item"><img src="img/set.png" alt="HTML" /></div>
+      <div class="skill-item"><img src="img/android.png" alt="CSS" /></div>
+      <div class="skill-item"><img src="img/C.svg" alt="JavaScript" /></div>
+      <div class="skill-item"><img src="img/firebase.png" alt="Android Studio" /></div>
+      <div class="skill-item"><img src="img/java.svg" alt="Firebase" /></div>
+      <div class="skill-item"><img src="img/python.png" alt="Python" /></div>
+      </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    window.onclick = function (e) {
+      const menu = document.getElementById("menuContent");
+      if (!e.target.matches(".menu-button")) {
+        menu.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
