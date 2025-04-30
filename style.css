@@ -273,6 +273,11 @@ body {
       text-align: center;
       margin-bottom: 30px;
     }
+
+    .about-section {
+        flex-direction: column;
+        height: auto;
+      }
   
     .bottom-left,
     .bottom-right {
